@@ -12,6 +12,25 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // bower:scss
 // endbower
 
+$blue: #3f4052;
+$white: #f9f9f9;
+
+html, body, .main-viewport, .main-container {
+  height: 100%;
+}
+
+body {
+  background: $blue;
+}
+
+.main-container {
+  background: $white;
+  max-width: 950px;
+  height: 100%;
+
+  padding: 25px 50px;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
