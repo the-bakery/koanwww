@@ -21,6 +21,19 @@ html, body, .main-viewport, .main-container {
 
 body {
   background: $blue;
+  font-size: 24px;
+  font-family: "Helvetica Neue";
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .main-container {
@@ -29,6 +42,26 @@ body {
   height: 100%;
 
   padding: 25px 50px;
+}
+
+.logo-link {
+  display: block;
+  margin: 0 0 -10px 0; // weird hack, idk
+}
+
+.nav-actions {
+  display: flex;
+  justify-content: center;
+  margin: -10px 0 -18px; // weird hack, idk
+
+  font-size: 28px;
+  font-family: 'Abel', sans-serif;
+
+  li {
+    color: black;
+    margin: 0 10px;
+    text-transform: uppercase;
+  }
 }
 
 .browsehappy {
