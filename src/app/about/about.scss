@@ -5,4 +5,16 @@
 .profile-pic {
   max-width: 250px;
   max-height: 250px;
+  border: 6px solid rgba(0,0,0,0.4);
+}
+
+.profile-tagline {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+//TODO fix this shit because it may clobber something later
+.row .col-sm-6{
+  margin-top: 32px;
+  margin-bottom: 64px;
 }
