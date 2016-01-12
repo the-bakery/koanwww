@@ -17,7 +17,7 @@
   function RouterController($router) {
     $router.config([
       { path: '/', component: 'main' },
-      { path: '/about', component: 'about' },
+      { path: '/team', component: 'team' },
       { path: '/join', component: 'join' },
       { path: '/contact', component: 'contact' },
       { path: '/blog', component: 'blog' }
