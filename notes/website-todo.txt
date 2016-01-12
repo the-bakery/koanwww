@@ -1,0 +1,15 @@
+- Website
+  - Pages
+    - Team [Chris]
+      - PSD Matt has
+    - Contact [Chris]
+      - Make simple form, bootstrap
+    - Projects
+      - not due tonight, v2
+      - provide visual template of what we want, then have people fill out copy / images / links based on that format
+  - make it work on mobile [Chris]
+  - design tweaking [Matt]
+
+- emails [Matt]
+- business cards [Chris]
+- calendar thing? [mvv]
