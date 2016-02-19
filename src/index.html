@@ -2,7 +2,9 @@
 <html ng-app="webapp">
   <head>
     <meta charset="utf-8">
-    <title>Koan Labs Consulting</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Koan Labs</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link href='https://fonts.googleapis.com/css?family=Abel|Roboto:300,300italic,400,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -23,39 +25,51 @@
   <body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+      <![endif]-->
 
-    <div class="container main-container">
-      <header>
-        <a href="/" class="logo-link"><img class="logo img-responsive" src="/assets/images/header.gif"></a>
-        <nav>
-          <img class="hr-img img-responsive" src="/assets/images/hr.gif">
-          <ul class="nav-actions">
-            <li><a href="/team">Team</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-          <img class="hr-img img-responsive" src="/assets/images/hr.gif">
-        </nav>
-      </header>
+      <div class="site-wrapper">
+        <div class="site-wrapper-inner">
 
-      <div ng-viewport ng-controller="RouterController" class="main-viewport"></div>
-    </div>
+          <div class="cover-container">
 
-    <!-- build:js(src) scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- run `gulp inject` to automatically populate bower script dependencies -->
-    <!-- endbower -->
-    <!-- endbuild -->
+            <div class="masthead clearfix" ng-controller="HeaderController">
+              <div class="inner">
+                <h2 class="masthead-brand"><a class="maintitle" href="#">KOAN LABS</a></h2>
+                <nav class="nav nav-masthead">
+                  <!--<a class="nav-link active" href="#">HOME</a>-->
+                  <a class="nav-link" ng-class="{ active: isActive('/collective')}" href="/collective">COLLECTIVE</a>
+                  <a class="nav-link" ng-class="{ active: isActive('/consulting')}" href="/consulting">CONSULTING</a>
+                  <a class="nav-link" ng-class="{ active: isActive('/about')}" href="/about">ABOUT</a>
+                </nav>
+              </div>
+            </div>
 
-    <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
-    <!-- inject:js -->
-    <!-- js files will be automatically insert here -->
-    <!-- endinject -->
+            <div ng-viewport ng-controller="RouterController" class="main-viewport"></div>
+            
+            <div class="mastfoot">
+              <div class="inner">
+                &copy;2016 Koan Labs
+              </div>
+            </div>
+          </div>
+        </div>
+         </div>
 
-    <!-- inject:partials -->
-    <!-- angular templates will be automatically converted in js and inserted here -->
-    <!-- endinject -->
-    <!-- endbuild -->
+        <!-- build:js(src) scripts/vendor.js -->
+        <!-- bower:js -->
+        <!-- run `gulp inject` to automatically populate bower script dependencies -->
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+        <!-- inject:js -->
+        <!-- js files will be automatically insert here -->
+        <!-- endinject -->
+
+        <!-- inject:partials -->
+        <!-- angular templates will be automatically converted in js and inserted here -->
+        <!-- endinject -->
+        <!-- endbuild -->
 
   </body>
 </html>

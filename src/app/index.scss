@@ -14,21 +14,20 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 
 $blue: #3f4052;
 $white: #f9f9f9;
-
+/*
 html, body, .main-viewport, .main-container {
   min-height: 100%;
 }
-
+*/
 body {
   background: $blue;
-  font-size: 24px;
   font-family: "Roboto", sans-serif;
 }
+
 
 a {
   color: black;
   text-decoration: none;
-  font-weight: bold;
 }
 
 ul {
@@ -105,6 +104,239 @@ label, .control-label {
   .main-container {
     margin: 30px 15px;
   }
+}
+
+//this is bullshit that needs to be re-integrated with the above shit in a nice way
+// CHRIS HELP MEEEEE!
+
+/*
+ * Globals
+ */
+
+html {
+    font-size: 16px;
+  }
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  background-image: url("/assets/images/cover.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Abel,sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#logo {
+  image-rendering: pixelated;
+  margin: auto;
+  width: 128px;
+  height: 128px;
+  background-image: url("/assets/images/logo-large.png");
+  background-size: contain;
+  font-weight: 700;
+}
+
+.inner h1 {
+  font-size: 1.5rem;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+  }
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  z-index: 1;
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+  box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  /*vertical-align: middle;*/
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 1rem;
+  padding-top: 1.25rem;
+}
+
+
+/*
+ * Header
+ */
+/*
+a.nav-link:hover {
+    text-decoration: none;
+}
+*/
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    /* margin-bottom: .5rem; */
+}
+
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.maintitle:hover, .maintitle:focus, .maintitle:active {
+   text-decoration: none;
+}
+
+
+.nav-masthead .nav-link {
+  /*padding: .25rem 0;*/
+  margin-top: 0rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: rgba(255,255,255,.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+.masthead-brand {
+  margin-bottom: 0.61rem;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  font-family: Roboto,sans-serif;
+  color: rgba(255,255,255,.15);
+  font-size: 0.5em;
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@media (min-width: 26em) and (min-height: 26rem) {
+  #logo {
+    width: 256px;
+    height: 256px;
+  }
+  
+}
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) and (min-height: 42rem){
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .masthead-brand {
+    margin-bottom: 0.61rem;
+  }
+  .inner h1{
+    font-size: 2.5rem;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) and (min-height: 42rem) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 46rem;
+  }
+
+  #logo {
+    width: 384px;
+    height: 384px;
+  }
+
 }
 
 /**
