@@ -27,19 +27,19 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
-      <div class="site-wrapper">
-        <div class="site-wrapper-inner">
+      <div class="site-wrapper" ng-controller="HeaderController">
+        <div class="site-wrapper-inner"  ng-class="{ middle: isActive('/')}" >
 
           <div class="cover-container">
 
-            <div class="masthead clearfix" ng-controller="HeaderController">
+            <div class="masthead clearfix" ng-class="{ middle: isActive('/')}">
               <div class="inner">
                 <h2 class="masthead-brand"><a class="maintitle" href="#">KOAN LABS</a></h2>
                 <nav class="nav nav-masthead">
                   <!--<a class="nav-link active" href="#">HOME</a>-->
-                  <a class="nav-link" ng-class="{ active: isActive('/collective')}" href="/collective">COLLECTIVE</a>
+                  <a class="nav-link" href="http://blog.koanlabs.org">COLLECTIVE</a>
                   <a class="nav-link" ng-class="{ active: isActive('/consulting')}" href="/consulting">CONSULTING</a>
-                  <a class="nav-link" ng-class="{ active: isActive('/about')}" href="/about">ABOUT</a>
+                  <a class="nav-link" ng-class="{ active: isActive('/about')}" href="/about">STORY</a>
                 </nav>
               </div>
             </div>

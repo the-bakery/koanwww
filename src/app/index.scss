@@ -1,12 +1,12 @@
 /**
- *  If you want to override some bootstrap variables, you have to change values here.
- *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ *  if you want to override some bootstrap variables, you have to change values here.
+ *  the list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
  */
-$navbar-inverse-link-color: #5AADBB;
+$navbar-inverse-link-color: #5aadbb;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 /**
- *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  do not remove the comments below. it's the markers used by wiredep to inject
  *  sass dependencies when defined in the bower.json of your dependencies
  */
 // bower:scss
@@ -20,8 +20,7 @@ html, body, .main-viewport, .main-container {
 }
 */
 body {
-  background: $blue;
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto", sans-serif;
 }
 
 
@@ -67,7 +66,7 @@ h1.page-title {
   justify-content: center;
 
   font-size: 28px;
-  font-family: 'Abel', sans-serif;
+  font-family: 'abel', sans-serif;
 
   li {
     color: black;
@@ -81,7 +80,7 @@ label, .control-label {
   font-size: 14px;
 }
 
-// Some crap I don't care about but don't care to remove
+// some crap i don't care about but don't care to remove
 
 .browsehappy {
   margin: 0.2em 0;
@@ -98,7 +97,7 @@ label, .control-label {
   }
 }
 
-// End of crap
+// end of crap
 
 @media screen and (max-width: 768px) {
   .main-container {
@@ -107,42 +106,41 @@ label, .control-label {
 }
 
 //this is bullshit that needs to be re-integrated with the above shit in a nice way
-// CHRIS HELP MEEEEE!
+// chris help meeeee!
 
 /*
- * Globals
+ * globals
  */
 
 html {
     font-size: 16px;
   }
 
-/* Links */
+/* links */
 a,
 a:focus,
 a:hover {
   color: #fff;
 }
 
-/* Custom default button */
+/* custom default button */
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none; /* prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
 }
 
 
 /*
- * Base structure
+ * base structure
  */
 
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 
 body {
@@ -152,7 +150,7 @@ body {
   background-image: url("/assets/images/cover.jpg");
   background-size: cover;
   background-attachment: fixed;
-  font-family: Abel,sans-serif;
+  font-family: abel,sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -174,12 +172,12 @@ body {
 a:hover, a:focus {
     text-decoration: none;
   }
-/* Extra markup and styles for table-esque vertical and horizontal centering */
+/* extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   z-index: 1;
   display: table;
   width: 100%;
-  height: 100%; /* For at least Firefox */
+  height: 100%; /* for at least firefox */
   min-height: 100%;
   -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
   box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
@@ -193,7 +191,7 @@ a:hover, a:focus {
   margin-left: auto;
 }
 
-/* Padding for spacing */
+/* padding for spacing */
 .inner {
   padding: 1rem;
   padding-top: 1.25rem;
@@ -201,7 +199,7 @@ a:hover, a:focus {
 
 
 /*
- * Header
+ * header
  */
 /*
 a.nav-link:hover {
@@ -263,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*
- * Cover
+ * cover
  */
 
 .cover {
@@ -276,11 +274,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*
- * Footer
+ * footer
  */
 
 .mastfoot {
-  font-family: Roboto,sans-serif;
+  font-family: roboto,sans-serif;
   color: rgba(255,255,255,.15);
   font-size: 0.5em;
   text-align: right;
@@ -295,33 +293,39 @@ h1, h2, h3, h4, h5, h6 {
     width: 256px;
     height: 256px;
   }
+    .content-wrapper {
+    font-size: 0.9rem;
+  }
   
 }
 /*
- * Affix and center
+ * affix and center
  */
 
 @media (min-width: 40em) and (min-height: 42rem){
-  /* Pull out the header and footer */
+  /* pull out the header and footer */
   .masthead {
-    position: fixed;
+    position: relative;
     top: 0;
   }
+   .masthead.middle{
+     position: fixed;
+   }
   .masthead-brand {
     margin-bottom: 0.61rem;
   }
   .inner h1{
     font-size: 2.5rem;
   }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
+  /* start the vertical centering */
+  .site-wrapper-inner.middle{
     vertical-align: middle;
   }
-  /* Handle the widths */
+  /* handle the widths */
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    width: 100%; /* must be percentage or pixels for horizontal alignment */
   }
 }
 
@@ -339,8 +343,39 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.content-wrapper {
+  margin-bottom: .5rem;
+  text-align: left;
+  font-size: 1rem;
+  height: 100%;
+  background-image: url("/assets/images/coverblur.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 1.2rem;
+  padding: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  color: rgba(255,255,255,0.8);
+  background-color: rgba(0,0,0,0.3);
+}
+
+.contentheader{
+  margin-bottom: .5rem;
+      background-image: url("/assets/images/coverblur.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+  text-align: left;
+  padding-left: 1.5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-weight: 700;
+}
+
+.aboutsection {
+}
+
 /**
- *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  do not remove the comments below. it's the markers used by gulp-inject to inject
  *  all your sass files automatically
  */
 // injector
